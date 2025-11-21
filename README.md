@@ -21,16 +21,24 @@ The entire pipeline is deployed using a robust **MLOps** architecture involving 
 ### Project Structure 
 ```text
 Brain_Tumor_Project/
-├── api/                 # FastAPI Backend
-│   ├── main.py          # Endpoints & MLflow integration
-│   ├── utils.py         # Preprocessing logic
-│   └── explainability.py# Grad-CAM implementation
-├── docker/              # Docker configurations
-├── models/              # Trained .keras models
-├── streamlit_app/       # Frontend Interface
-├── tests/               # Unit tests (pytest)
-├── docker-compose.yml   # Orchestration
-└── requirements.txt     # Python dependencies
+├── api/
+│   ├── __init__.py
+│   ├── main.py             
+│   ├── utils.py           
+│   └── explainability.py  
+├── docker/
+│   ├── Dockerfile.api      
+│   └── Dockerfile.ui      
+├── models/
+│   └── best_model_finetuned.keras  
+├── streamlit_app/
+│   └── app.py              
+├── tests/
+│   ├── __init__.py
+│   └── test_api.py         
+├── docker-compose.yml      
+├── requirements.txt        
+└── README.md               
 ```
 ## 🚀 Getting Started
 
