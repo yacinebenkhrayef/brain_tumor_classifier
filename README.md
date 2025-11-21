@@ -1,9 +1,9 @@
-# 🧠 Brain Tumor Classification & Explainability (MRI)
+# 🧠 Brain Tumor Classifier
 
 ## 📋 Project Overview
 This project is a deep learning solution for detecting brain tumors from MRI scans. It utilizes **Transfer Learning** (ResNet50) to classify images into four categories: **Glioma, Meningioma, Pituitary, and No Tumor**.
 
-[cite_start]Beyond classification, this project focuses on **Explainable AI (XAI)** using **Grad-CAM** to visualize the regions of the brain driving the model's predictions, addressing ethical transparency requirements in medical AI[cite: 14].
+Beyond classification, this project focuses on **Explainable AI (XAI)** using **Grad-CAM** to visualize the regions of the brain driving the model's predictions, addressing ethical transparency requirements in medical AI.
 
 The entire pipeline is deployed using a robust **MLOps** architecture involving Docker, FastAPI, Streamlit, and MLflow.
 
@@ -18,7 +18,7 @@ The entire pipeline is deployed using a robust **MLOps** architecture involving 
 * **MLOps/Tracking:** MLflow (with Postgres & MinIO)
 * **Containerization:** Docker & Docker Compose
 
-### [cite_start]Project Structure [cite: 115]
+### Project Structure 
 ```text
 Brain_Tumor_Project/
 ├── api/                 # FastAPI Backend
@@ -31,7 +31,7 @@ Brain_Tumor_Project/
 ├── tests/               # Unit tests (pytest)
 ├── docker-compose.yml   # Orchestration
 └── requirements.txt     # Python dependencies
-
+```
 ## 🚀 Getting Started
 
 ### Prerequisites
